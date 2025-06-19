@@ -1,0 +1,8 @@
+name: r-shiny-terraform
+infra:
+  provider: terraform
+services:
+  shiny:
+    project: ./src
+    language: docker
+    host: appservice
