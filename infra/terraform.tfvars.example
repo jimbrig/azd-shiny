@@ -1,0 +1,18 @@
+# Example Terraform variables file for R Shiny Azure Container Apps deployment
+# Copy this file to terraform.tfvars and update with your values
+
+# Azure region for deployment
+location = "East US"
+
+# Name of the azd environment (will be used as prefix for resource names)
+environment_name = "my-shiny-app"
+
+# Container image name
+image_name = "shinyapp"
+
+# Secret value for the R Shiny application (use a secure value in production)
+app_secret_value = "your-secure-secret-value-here"
+
+# Container scaling configuration
+min_replicas = 1
+max_replicas = 3

@@ -5,4 +5,4 @@ services:
   shiny:
     project: ./src
     language: docker
-    host: appservice
+    host: containerapp
